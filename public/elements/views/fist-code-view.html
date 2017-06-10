@@ -1,0 +1,25 @@
+<!-- Load the Polymer.Element base class -->
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/px-view-header/px-view-header.html">
+<link rel="import" href="../../bower_components/px-card/px-card.html">
+<link rel="import" href="../../bower_components/px-spinner/px-spinner.html" />
+<link rel="import" href="../../bower_components/px-simple-line-chart/px-simple-line-chart.html" />
+
+
+<dom-module id="fist-code-view">
+    <!-- Defines the element's style and local DOM -->
+    <template>
+
+        <h1>MY VIEW MOTHERFUCKER</h1>
+        <px-spinner></px-spinner>
+        <px-simple-line-chart line-data="[ [1,2], [2,3], [3,4] ]" columns="20" rows="7"></px-simple-line-chart>
+    </template>
+    <script>
+        Polymer({
+            is: 'fist-code-view',
+            properties: {},
+        });
+
+    </script>
+
+</dom-module>

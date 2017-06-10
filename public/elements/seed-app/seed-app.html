@@ -88,7 +88,17 @@
           <px-view
             active="[[_simple-assetActive]]"
             element-href="/elements/views/simple-asset-view.html">
-         </px-view>
+          </px-view>
+            <!-- /simple-asset route and view -->
+          <app-route
+            route="[[_route]]"
+            pattern="/fist-code"
+            active="{{_fist-codeActive}}">
+          </app-route>
+          <px-view
+            active="[[_fist-codeActive]]"
+            element-href="/elements/views/fist-code-view.html">
+          </px-view>
 
         </main>
 
@@ -118,8 +128,8 @@
           type: Object,
           value: function() {
             return {
-              version: '1.0',
-              name: 'Predix UI Seed - RMD Reference App'
+              version: '0.0',
+              name: 'Predix UI Seed - Dapep Remix'
             }
           }
         },
@@ -140,14 +150,18 @@
                 "path": "/about",
                 "icon": "fa-info-circle"
               }
-              //Uncomment this block to show the Simple Asset navigation item on the menu.
-              /* // asset-nav-item
+              //Uncomment this block to show the Simple Asset navigation item on the menu.// asset-nav-item
               ,{
                 "label": "Simple Asset",
                 "path": "/simple-asset",
                 "icon": "fa-sitemap"
               }
-              // end asset-nav-item */
+              ,{
+                "label": "First Code",
+                "path": "/fist-code",
+                "icon": "fa-code"
+              }
+              // end asset-nav-item
             ]
           }
         },
