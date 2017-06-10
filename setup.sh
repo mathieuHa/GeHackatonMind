@@ -5,3 +5,4 @@ echo "npm"
 sudo npm install
 echo "bower"
 bower install
+gulp
